@@ -1,0 +1,59 @@
+Name:Jothika S
+Date: 22-11-2024
+Domain: Testing
+Java Task
+1.Is Dictionary is available in java or not?
+Dictionary class is still part of Java, it is considered outdated and is rarely used in modern Java programming. Developers are encouraged to use the Map interface and its implementations, such as HashMap, for working with key-value pairs.
+Dictionary is the list of key-value pairs. 
+Part of java.util package.
+Stores key-value pairs, but keys and values can be any object.
+We can store, retrieve, remove, get, and put values in the dictionary by using the Java Dictionary class.
+It is synchronized, meaning thread-safe but potentially slower.
+Provides various implementations, such as HashMap, TreeMap, LinkedHashMap, etc.
+2. Difference between TreeSet, HashMap, Hashset. 
+HashSet and TreeSet is Set Implementation.
+HashMap is Map Implementation.
+HashSet - A HashSet is a collection that contains unique elements and provides fast access to elements based on their hash values, without guaranteeing any order.
+TreeSet - A TreeSet is a collection that contains unique elements, is sorted in natural order (or according to a custom comparator), and provides efficient operations on ordered data.
+HashMap -  A HashMap is a collection that stores key-value pairs, allowing fast lookups, inserts, and removals of key-value mappings. Keys must be unique, but values can be duplicated.
+Ordering:
+Hashset - Unordered , the elements in a hashset are not stored in any particular order.
+TreeSet - Sorted order, elements are stored in their natural order (if they are Comparable) or according to a custom comparator. 
+HashMap - Unordered, The keys in a HashMap are not stored in any particular order.
+Duplicates:
+HashSet - Does not allow duplicate elements.
+TreeSet - Does not allow duplicate elements.
+HashMap - Allows only unique keys but allows duplicate values. The keys must be unique, but multiple keys can map to the  same value.
+When to use:
+HashSet  -  When you need a collection with unique elements but do not care about the order.
+TreeSet -  When you need a collection with unique elements in a sorted order.
+HashMap -  When you need to store key-value pairs, where each key maps to a single value, and you want fast access by key.
+3. Interfaces:
+      An interface in Java is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces cannot contain instance fields (variables). A class or another interface can implement an interface by providing the body (implementation) for the methods declared in the interface.
+An interface cannot have method implementations (except for default methods and static methods).
+A class implements an interface using the implements keyword.
+Interfaces allow for multiple inheritance since a class can implement more than one interface.
+Interfaces are useful for providing a standard set of methods across different classes.
+Why Are Interfaces Used as Base Classes for Collections?
+ In Java, interfaces are used as the base types (or base classes, conceptually) for the Collections Framework because they provide several key benefits that contribute to the design principles of abstraction, flexibility, reusability, and polymorphism.
+15 interfaces:
+Comparable, Comparator, List, Set, Queue, 
+Map, SortedSet, NavigableSet, SortedMap, NavigableMap, 
+Iterator, ListIterator, Iterable, Collection, Deque
+Why interfaces ends with able?
+         In Java, the convention of naming interfaces with the suffix -able (e.g., Serializable, Comparable, Runnable) is a naming convention that indicates that the class implementing the interface is capable of or able to perform the action or behavior described by the interface. This naming style enhances readability, clarity, and understanding of the interface's purpose.
+         But,not all interfaces in Java end with -able. While many interfaces in Java, especially those related to capabilities or behaviors, use the -able suffix, it's far from a universal rule. The -able suffix is a naming convention used for interfaces that define a specific capability (like Serializable, Cloneable, Comparable, etc.), but it's not required or followed for all interfaces.
+Throw and throws:
+Throw:
+Used to explicitly throw an exception inside a method.
+It’s followed by the new keyword to create an exception object.
+Throws:
+Used in the method signature to declare that the method might throw an exception.
+It tells the calling code that it must handle or declare the exception.
+Why map is not inside the collections:
+      Collection is intended for groups of individual elements, whereas Map is designed to handle key-value pairs (a set of mappings from keys to values).Map is not part of Collection because it works with key-value pairs rather than individual elements. This separation makes it easier to maintain clarity in the design of the Java Collections Framework.
+
+
+
+
+
